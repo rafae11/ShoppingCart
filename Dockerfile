@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-MAINTAINER RAFAEL GONZALEZ
+LABEL maintainer="RAFAEL GONZALEZ"
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
