@@ -24,3 +24,13 @@ make sure to update requirements.txt file and run.
 `docker-compose build`
 
 **********************************************************
+
+# To run the server
+
+`docker-compose up`
+
+**********************************************************
+
+# To create a superuser
+
+`docker-compose run app sh -c "python manage.py createsuperuser"`
