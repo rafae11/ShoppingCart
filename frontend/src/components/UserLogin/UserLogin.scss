@@ -3,5 +3,8 @@
   }
 
 .buttonContainer {
-    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 195px;
+    padding: 10px;
 }

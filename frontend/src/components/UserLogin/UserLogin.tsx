@@ -7,10 +7,11 @@ import './UserLogin.scss'
 type CardProps = {
   username: string;
   password: string;
-  onClicked: () => void;
+  onLoginClicked: () => void;
+  onSignUpClicked: () => void;
 };
 
-const Card = ({ username, password, onClicked }: CardProps) => (
+const Card = ({ username, password, onLoginClicked, onSignUpClicked }: CardProps) => (
   <aside>
 
     <div id='userLoginContainer'>
@@ -25,13 +26,14 @@ const Card = ({ username, password, onClicked }: CardProps) => (
     </div>
 
     <div className='buttonContainer'>
-    <Button variant="contained" onClick={onClicked}>Sign Up</Button>
+    <Button variant="contained" onClick={onSignUpClicked}>Sign Up</Button>
+    <Button variant="contained" onClick={onLoginClicked}>Login</Button>
     </div>
 
     </div>
   </aside>
 );
 
-const el = <Card username="Welcome!" password="To this example" onClicked={()=>{}}/>;
+const el = <Card username="Welcome!" password="To this example" onSignUpClicked={()=>{}} onLoginClicked={()=>{}}/>;
 
 export default Card;

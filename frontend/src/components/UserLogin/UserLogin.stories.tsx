@@ -6,7 +6,8 @@ export default {
   component: UserLogin,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    onClicked: { action: 'sign up clicked' }
+    onSignUpClicked: { action: 'sign up button clicked' },
+    onLoginClicked: { action: 'login button clicked' }
   },
 } as ComponentMeta<typeof UserLogin>;
 
